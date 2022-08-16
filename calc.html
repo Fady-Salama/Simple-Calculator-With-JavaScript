@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>calculator</title>
+	<style type="text/css">
+		table{
+			border: 2px solid black;
+			border-collapse: collapse;
+			width: 1000px;
+			height: 600px;
+			text-align: center;
+			font-size: 70px;
+		}
+		td{
+			border: 1px solid black;
+			max-width: 500px;
+		}
+		#cal{
+			border: 1px solid black;
+			height: 120px;
+			width: 90%;
+			max-width: 650px;
+			margin: auto;
+			font-size: 100px;
+			background-color: #ccc;
+			overflow: auto;
+			text-align: right;
+		}
+		.number{
+			background-color: #ff6347;
+		}
+		.number:hover{
+			background-color: #ee7488;
+		}
+		.sign{
+               background-color: #ff4500;
+		}
+		.sign:hover{
+               background-color: #dd3400;
+		}
+		.equal{
+			background-color: #ffa500;
+		}
+		.equal:hover{
+			background-color: #ee9400;
+		}
+		.clear{
+			background-color: #ffa500;
+		}
+		.clear:hover{
+			background-color: #ee9400;
+		}
+		.fadysss{
+			background: salmon;
+		}
+		#res{
+			width: 250px;
+			max-width: 250px;
+		}
+		tr{
+			max-width: 100px;
+		}
+		.number:hover,.sign:hover,.equal:hover,.clear:hover{
+			cursor: context-menu;
+		}
+	</style>
+</head>
+<body>
+     <div id="container">
+     	<table>
+     		<tr>
+     			<td colspan="3" id="res" class="fadysss">
+     				<div id="cal"></div>
+     			</td>
+     			<td id="clear" class="clear" onclick="fady1()">C</td>
+     		</tr>
+     		<tr>
+     			<td id="one" class="number" onclick="fady2()">1</td>
+     			<td id="two" class="number" onclick="fady3()">2</td>
+     			<td id="three" class="number" onclick="fady4()">3</td>
+     			<td id="equal" class="number" onclick="fady5()">=</td>
+     		</tr>
+     		<tr>
+     			<td id="four" class="number" onclick="fady6()">4</td>
+     			<td id="five" class="number" onclick="fady7()">5</td>
+     			<td id="six" class="number" onclick="fady8()">6</td>
+     			<td id="divide" class="sign" onclick="fady9()">/</td>
+     		</tr>
+     		<tr>
+     			<td id="seven" class="number" onclick="fady10()">7</td>
+     			<td id="eight" class="number" onclick="fady11()">8</td>
+     			<td id="nine" class="number" onclick="fady12()">9</td>
+     			<td id="minus" class="sign" onclick="fady13()">-</td>
+     		</tr>
+     		<tr>
+     			<td id="point" class="number" onclick="fady14()">.</td>
+     			<td id="zero" class="number" onclick="fady15()">0</td>
+     			<td id="times" class="number" onclick="fady16()">x</td>
+     			<td id="plus" class="number" onclick="fady17()">+</td>
+     		</tr>
+     	</table>
+     	<div>
+     		<script type="text/javascript" src="calc.js">
+     			 
+     		</script>
+     	</div>
+</body>
+</html>
